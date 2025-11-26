@@ -24,11 +24,7 @@ python ingest_manual.py
 python query_api.py -q "How to add detergent?"
 ```
 
-Hybrid control:
 
-``` bash
-python query_api.py -q "clean filter" --alpha 0.5
-```
 
 ## 5. Run Streamlit UI
 

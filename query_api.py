@@ -86,6 +86,8 @@ Provide the BEST answer using ONLY the given context.
 def main():
     parser = argparse.ArgumentParser(description="RAG Query Engine With Latency Logs")
     parser.add_argument("-q", "--query", required=True)
+    parser.add_argument("--alpha", type=float, default=0.5, help="MMR or hybrid weighting")
+
     args = parser.parse_args()
 
     answer = run_query(args.query)
